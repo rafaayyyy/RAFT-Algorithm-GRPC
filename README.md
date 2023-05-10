@@ -29,9 +29,7 @@ The code also defines a `writeLogFiles()` function, which writes the messages se
 Three command line arguments are passed which contain the node ID (it is used to open a port on the local host), node status, and term number. The input or code is run using the following command:
 * ./greeter_server [node id] [node status] [term number]
 
-## Log Files
-
-Every node has its own log file which is opened in append mode to record all the messages sent and received by a particular node.
+`Log Files`: Every node has its own log file which is opened in append mode to record all the messages sent and received by a particular node.
 
 `helloworld.proto`: This file contains our basic service and other messages for communication between our nodes. Command and path locations for the proto file were already predetermined by the makefile provided by the original Hello World Package. This file introduced new services and messages for our Hello Request and Response services and their subsequent requests and replies. Message Hello Request now also contains strings of the node ID, node status, and term number.
 
