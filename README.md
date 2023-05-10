@@ -1,4 +1,5 @@
 # RAFT-Algorithm-GRPC
+The code is implemented on top of the default helloworld project in grpc installed examples.
 
 ## Setup
 
