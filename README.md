@@ -5,10 +5,11 @@
 For this project, I used the Ubuntu-based system and downloaded and installed GRPC as instructed by the official website. The dependencies and links with other files were used as it is from one of the examples given. I used the ‘Hello World’ example project to implement my master-slave implementation. The location of the proto file and other dependencies were predetermined and were used as it is. Cmake was used to build and run the project.
 
 The commands to run my project from the root directory are as follows:
-mkdir -p cmake/build
-pushd cmake/build
-cmake -DCMAKE_PREFIX_PATH=$MY_INSTALL_DIR ../..
-make -j 4
+* mkdir -p cmake/build
+* pushd cmake/build
+* cmake -DCMAKE_PREFIX_PATH=$MY_INSTALL_DIR ../..
+* make -j 4
+
 
 
 After this, we can run our node code (`./greeter_server.cc`).
@@ -26,7 +27,7 @@ The `GreeterServiceImpl` class has been defined to deal with the request and res
 The code also defines a `writeLogFiles()` function, which writes the messages sent and received by the node to a log file. This function sends a "Hello" message to all the other nodes and records the messages sent and received in the log file.
 
 Three command line arguments are passed which contain the node ID (it is used to open a port on the local host), node status, and term number. The input or code is run using the following command:
-./greeter_server [node id] [node status] [term number]
+* ./greeter_server [node id] [node status] [term number]
 
 ## Log Files
 
